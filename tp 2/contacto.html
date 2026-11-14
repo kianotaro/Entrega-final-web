@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul id="menu-nav"> 
+                <li><img src="img/logo.2.blc.png" alt="logo"></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#conocenos">Sobre nosotros</a></li>
+                <li><a href="index.html#que-hacemos">Qué hacemos</a></li>
+                <li><a href="#contacto" class="activo">Contacto</a></li>
+                <li><a href="#" class="btn-donar" id="abrir-donacion">Donar</a></li>
+            </ul>
+
+            <button class="boton-menu" id="boton-menu" type="button" aria-label="Abrir menú" 
+            aria-expanded="false" aria-controls="menu-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </nav>
+    </header>
+    
+<!-- SECCIÓN CONTACTO -->
+
+<section id="contacto">
+
+    <div class="contacto-encabezado">
+        <h3>MAREA AZUL · CONTACTO</h3>
+        <h1>Contacto</h1>
+        <p>Estamos acá para escucharte.</p>
+    </div>
+
+    <div class="contacto-tarjeta">
+
+        <form id="form-contacto">
+
+            <div class="contacto-campo">
+                <label for="nombre">Nombre</label>
+                <input 
+                    type="text" 
+                    id="nombre" 
+                    name="nombre"
+                    placeholder="Tu nombre..."
+                    required
+                >
+            </div>
+
+            <div class="contacto-campo">
+                <label for="correo">Correo electrónico</label>
+                <input 
+                    type="text" 
+                    id="correo" 
+                    name="correo"
+                    placeholder="Tu correo electrónico..."
+                    required
+                >
+            </div>
+
+            <div class="contacto-campo">
+                <label for="solicitud">Solicitud</label>
+                <textarea 
+                    id="solicitud" 
+                    name="solicitud"
+                    placeholder="Escribí tu mensaje..."
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit" id="btn-enviar">
+                Enviar mensaje
+            </button>
+
+            <p id="mensaje-exito"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- FIN SECCIÓN CONTACTO -->
+
+
+
+<div id="modal-donacion" class="modal-donacion" hidden>
+
+    <div class="contenido-donacion">
+
+        <!-- BOTON CERRAR -->
+
+        <button id="cerrar-donacion" class="cerrar-donacion">
+            &times;
+        </button>
+
+        <!-- ENCABEZADO -->
+
+        <div class="encabezado-donacion">
+
+            <h2>Apoyá a Marea Azul</h2>
+
+            <p>
+                Tu ayuda protege a miles de especies de nuestras costas.
+            </p>
+
+        </div>
+
+        <!-- OPCIONES DE DONACION -->
+
+        <div class="opciones-donacion">
+
+            <h3>Elegí cuánto querés aportar</h3>
+
+            <div class="montos-donacion">
+
+                <button class="monto" data-monto="2000">
+                    $2.000
+                </button>
+
+                <button class="monto" data-monto="5000">
+                    $5.000
+                </button>
+
+                <button class="monto" data-monto="10000">
+                    $10.000
+                </button>
+
+                <button class="monto" data-monto="15000">
+                    $15.000
+                </button>
+
+            </div>
+
+            <!-- OTRO MONTO -->
+
+            <input
+                type="text"
+                id="otro-monto"
+                placeholder="Otro monto"
+                inputmode="numeric"
+            >
+
+        </div>
+
+        <!-- BOTON CONTINUAR -->
+
+        <button id="continuar-donacion">
+            Continuar
+        </button>
+
+        <!-- MENSAJE -->
+
+        <p id="mensaje-donacion"></p>
+
+    </div>
+
+</div>
+
+<!-- FIN VENTANA DE DONACION -->
+
+    <script src="donar.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>

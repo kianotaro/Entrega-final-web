@@ -1,0 +1,1206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0B3249;
+}
+
+nav{
+    position: absolute;
+    z-index: 1;
+    width: 100dvw;
+}
+
+nav ul {
+    display: flex;
+    list-style: none; 
+    gap: 30px;
+    background: linear-gradient(to bottom, #0B3249, #0b3249a1, #0b324900);
+    justify-content: flex-end;
+    padding-right: 40px;
+    height: 12vh;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: x-large;
+    color: rgba(249, 234, 234, 0.913);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+.btn-donar {
+    background-color: #42b7b0;
+    color: rgba(249, 234, 234, 0.913);
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 180, 216, 0.3);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-donar:hover {
+    background-color: #3aa09a;
+    transform: scale(1.05);
+}
+
+nav img {
+    width: 67px;
+    position: absolute;
+    left: 0;
+    top: 12px;
+    margin-left: 15px;
+}
+
+/*detalle*/
+
+nav ul li a.activo {
+  color: #42b7b0;             
+  font-weight: 500;
+  border-bottom: 3px solid #42b7b0;
+  padding-bottom: 10px;         
+}
+
+
+/*pag principal*/
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+  
+  /*degrade*/
+    background: linear-gradient(
+    to right, 
+    rgba(10, 25, 47, 0.9) 0%,    
+    rgba(10, 25, 47, 0.65) 30%,   
+    rgba(10, 25, 47, 0.2) 60%,    
+    rgba(10, 25, 47, 0) 100%      
+  ), url('img/Fondo.jpg');
+  
+  background-size: cover;
+  background-position: center 65%; 
+  
+  display: flex;
+  align-items: center;
+  padding-left: 8%;   
+  box-sizing: border-box;
+}
+
+
+.tarjeta {
+    color: rgba(249, 234, 234, 0.913);
+    margin-bottom: 5%;
+
+}
+
+
+
+.titulo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 80px; 
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-shadow: 0 5px 11px rgba(0, 0, 0, 0.3);
+}
+
+.intro {
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+    margin-bottom: 35px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.btn-conocenos {
+    display: inline-block;
+    background-color: #42b7b0; 
+    color: rgba(249, 234, 234, 0.913);
+    padding: 14px 32px;
+    border-radius: 8px; 
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 180, 216, 0.3); 
+    transition: all 0.3s ease;
+}
+
+.btn-conocenos:hover {
+    background-color: #3aa09a;
+    transform: scale(1.02)
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*seccion conocenos*/
+
+#conocenos {
+    background-color: #0B3249;
+    z-index: 2;
+    box-shadow: 5rem 5rem  #0B2637;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    margin-top: 5rem;
+    background: linear-gradient(
+    to bottom,
+    #0B3249 0%,    /* El azul original de esta sección */
+    #092a3d 60%,   /* Se oscurece progresivamente */
+    #0c1d36 100%   /* Reemplazá por el color idéntico de la sección "Qué hacemos" */
+  );
+}
+
+#texto-conocenos {
+    display: flex;
+    flex-direction: column;
+    width: 60%; 
+    color: rgba(249, 234, 234, 0.913); 
+}
+
+.nuestra {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 7%;
+    margin-left: 90px;
+    color: #5BC0BE;
+}
+
+.separador {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: #5BC0BE;
+    margin-top: -10px;
+}
+
+.t-res{
+    text-shadow: 0 5px 11px rgba(0, 0, 0, 0.3);
+    font-size: 4rem;
+    margin-left: 85px;
+    color: #39bcc7;
+    margin-top: 1px;
+}
+
+.resumen {
+    font-size: x-large;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+#aside-conocenos {
+    background-color: #0B3249;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    box-shadow: -1px 0 25px rgba(0, 0, 0, 0.5);
+}
+
+.pinguino {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/*cajitas conocenos*/
+
+.caja-indice {
+    background-color: #1b425e;
+    border-left: 6px solid #4fc3f7;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 18px;
+    margin-top: 50px;
+    margin-left: 80px;
+    background: linear-gradient(to right, #1b425e 10%, rgba(28, 68, 97, 0) 90%);
+    max-width: 85%;
+
+    transition: all 0.4s ease;
+    transform-origin: center;
+}
+
+.caja-indice:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.caja-indice h3 {
+    font-size: 25px;
+    margin: 0 0 6px 0; 
+    font-weight: bold;
+    color: #78d1fa;
+    text-shadow: 0 5px 11px rgba(0, 0, 0, 0.3);
+}
+
+.caja-indice p {
+    font-size: large;
+}
+
+#btn-back {
+    width: 180px;
+    margin-left: 80px;
+    margin-top: 10px;
+    color: aliceblue;
+    background-color: #3a9e97;
+    text-decoration: none;
+    height: 35px;
+    border-radius: 9px;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    box-shadow: 0 4px 15px rgba(0, 180, 216, 0.2); 
+    transition: all 0.3s ease;
+}
+
+
+#btn-back:hover{
+    background-color: #38847f;
+    transform: scale(1.01)
+}
+
+.btn-back a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+/*Que-hacemos*/
+
+#que-hacemos {
+    background-color: #0c1d36;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background: linear-gradient(
+    to bottom,
+    #0c1d36 0%,    /* El azul original de esta sección */
+    #0a182d 60%,   /* Se oscurece progresivamente */
+    #071020 100%   /* Reemplazá por el color idéntico de la sección "Qué hacemos" */
+  );
+}
+
+.pilares {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: large;
+    letter-spacing: 2px;
+    margin-top: 4%;
+    margin-left: 90px;
+    color: #9FCFD4;
+}
+
+.t-pilares{
+    text-shadow: 0 5px 11px rgba(0, 0, 0, 0.5);
+    font-size: 4rem;
+    margin-left: 85px;
+    color: #48adac; 
+    margin-top: 1px;
+}
+
+
+/* GRILLA DE TARJETAS */
+
+.contenedor-trj{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 40px;
+    /*          */
+    background-color: #102e44;
+    border: 2px solid #9FCFD4;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 25px 8px #081d2a;
+    /*         */
+    transition: box-shadow 0.4s ease;
+}
+
+.contenedor-trj:hover{
+    box-shadow: 0 0 15px 5px rgb(159, 207, 212, 0.3);
+}
+
+.trj-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.trj-img {
+    width: 420px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.categoria {
+    display: block;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #9FCFD4;
+    text-shadow: 0 5px 11px rgba(0, 0, 0, 0.3);
+}
+
+.trj-cuerpo p {
+    margin-top: 10px;
+    font-size: large;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e6eae8;
+}
+
+/*Pie de pagina*/
+
+#footer{
+    background-color: #071020;
+    height: 60vh;
+    background: linear-gradient(
+    to bottom,
+    #071020 0%,    /* El azul original de esta sección */
+    #060d1b 60%,   /* Se oscurece progresivamente */
+    #03070e 100%   /* Reemplazá por el color idéntico de la sección "Qué hacemos" */
+  );
+}
+
+#footer-contenido{
+    gap: 40px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+
+.sumate {
+    color: #e8ded4ea;
+    border-radius: 25px;
+    border: solid 2px #e8ded4ea;
+    padding: 10px 30px;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 60px;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+}
+
+.sumate:hover{
+    background-color: #040810;
+    transform: scale(1.05);
+}
+
+#final {
+    color: #e8ded4db;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    padding-top: 20px;
+}
+
+.derechos{
+    color: #e8ded4ea;
+    font-size: larger;
+    font-weight: 400;
+    padding-top: 120px;
+}
+
+/*PAGINA CONTACTO*/
+
+
+/* SECCION CONTACTO */
+
+#contacto {
+    background-color: #051824;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 120px 20px 60px;
+}
+
+/* ENCABEZADO */
+
+.contacto-encabezado {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contacto-encabezado h3 {
+    color: #9FCFD4;
+    font-size: large;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.contacto-encabezado h1 {
+    color: #48adac;
+    font-size: 4rem;
+    text-shadow: 0 5px 11px rgba(0, 0, 0, 0.5);
+    margin-bottom: 8px;
+}
+
+.contacto-encabezado p {
+    color: #e6eae8;
+    font-size: large;
+}
+
+/* TARJETA DEL FORMULARIO */
+
+.contacto-tarjeta {
+    background-color: #102e44;
+    border: 2px solid #9FCFD4;
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 0 15px 6px #0b2738;
+}
+
+/* CAMPOS */
+
+.contacto-campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contacto-campo label {
+    color: #9FCFD4;
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.contacto-campo input,
+.contacto-campo textarea {
+    background-color: #183d53;
+    border: 1px solid #28536b;
+    border-radius: 8px;
+    padding: 13px;
+    color: #e6eae8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    outline: none;
+    width: 100%;
+}
+
+.contacto-campo input:focus,
+.contacto-campo textarea:focus {
+    border-color: #42b7b0;
+}
+
+.contacto-campo input::placeholder,
+.contacto-campo textarea::placeholder {
+    color: #9aafba;
+}
+
+/* CUADRO DE SOLICITUD */
+
+.contacto-campo textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* BOTON ENVIAR */
+
+#btn-enviar {
+    background-color: #42b7b0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 13px;
+    width: 100%;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btn-enviar:hover {
+    background-color: #3aa09a;
+    transform: scale(1.02);
+}
+
+/* MENSAJE DE CONFIRMACION */
+
+#mensaje-exito {
+    color: #9FCFD4;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+/* ADAPTACION A CELULARES */
+
+@media (max-width: 600px) {
+
+    .contacto-encabezado h1 {
+        font-size: 3rem;
+    }
+
+    .contacto-tarjeta {
+        padding: 20px;
+    }
+
+}
+
+
+
+/* ============================== */
+/* VENTANA DE DONACION */
+/* ============================== */
+
+/* FONDO OSCURO DETRAS DE LA VENTANA */
+
+.modal-donacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.65);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+
+    padding: 20px;
+}
+
+/* OCULTAR LA VENTANA */
+
+.modal-donacion[hidden] {
+    display: none;
+}
+
+/* CONTENIDO DE LA VENTANA */
+
+.contenido-donacion {
+    background-color: #ffffff;
+
+    width: 100%;
+    max-width: 430px;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    position: relative;
+
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* BOTON CERRAR */
+
+.cerrar-donacion {
+    position: absolute;
+
+    top: 12px;
+    right: 18px;
+
+    background: none;
+    border: none;
+
+    color: #526875;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+.cerrar-donacion:hover {
+    color: #42b7b0;
+}
+
+/* ENCABEZADO */
+
+.encabezado-donacion {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.encabezado-donacion h2 {
+    color: #0B3249;
+
+    font-size: 2rem;
+
+    margin-bottom: 12px;
+}
+
+.encabezado-donacion p {
+    color: #526875;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+/* OPCIONES DE DONACION */
+
+.opciones-donacion h3 {
+    color: #0B3249;
+
+    font-size: 16px;
+
+    margin-bottom: 15px;
+}
+
+/* CUADRICULA DE MONTOS */
+
+.montos-donacion {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+}
+
+/* BOTONES DE MONTOS */
+
+.monto {
+    background-color: #ffffff;
+
+    border: 1px solid #9FCFD4;
+
+    border-radius: 8px;
+
+    padding: 14px;
+
+    color: #0B3249;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.monto:hover {
+    background-color: #EAF6F6;
+}
+
+/* MONTO SELECCIONADO */
+
+.monto.seleccionado {
+    background-color: #42b7b0;
+
+    border-color: #42b7b0;
+
+    color: #ffffff;
+}
+
+/* CAMPO OTRO MONTO */
+
+#otro-monto {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 13px;
+
+    border: 1px solid #9FCFD4;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    color: #0B3249;
+
+    outline: none;
+}
+
+#otro-monto:focus {
+    border-color: #42b7b0;
+}
+
+#otro-monto::placeholder {
+    color: #899da7;
+}
+
+/* BOTON CONTINUAR */
+
+#continuar-donacion {
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    background-color: #42b7b0;
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#continuar-donacion:hover {
+    background-color: #3aa09a;
+
+    transform: scale(1.02);
+}
+
+/* MENSAJE */
+
+#mensaje-donacion {
+    color: #0B5962;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    margin-top: 15px;
+}
+
+/* ADAPTACION A CELULARES */
+
+
+/* ================================================== */
+/*                  VERSION CELULAR                   */
+/*   (reemplaza a los bloques "celular" anteriores)   */
+/* ================================================== */
+ 
+@media (max-width: 600px) {
+ 
+    /* ---------- GENERAL ---------- */
+ 
+    body {
+        overflow-x: hidden;   /* evita que la pagina se mueva hacia los costados */
+    }
+ 
+    /* para que la barra fija no tape los titulos al usar los links del menu */
+    #conocenos,
+    #que-hacemos {
+        scroll-margin-top: 64px;
+    }
+ 
+ 
+    /* ---------- BARRA DE NAVEGACION ---------- */
+ 
+    nav {
+        position: fixed;              /* queda siempre arriba al hacer scroll */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 64px;
+        z-index: 100;
+        background-color: rgba(11, 50, 73, 0.97);
+        box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+    }
+ 
+    /* logo */
+    nav img {
+        width: 46px;
+        height: auto;
+        top: 50%;
+        left: 0;
+        margin-left: 16px;
+        transform: translateY(-50%);
+    }
+ 
+    /* BOTON HAMBURGUESA */
+    .boton-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+ 
+        position: absolute;
+        top: 50%;
+        right: 14px;
+        transform: translateY(-50%);
+ 
+        width: 46px;
+        height: 46px;
+ 
+        background: transparent;
+        border: 1px solid rgba(159, 207, 212, 0.35);
+        border-radius: 10px;
+ 
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        transition: border-color 0.3s ease, background-color 0.3s ease;
+    }
+ 
+    .boton-menu span {
+        display: block;
+        width: 22px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: rgba(249, 234, 234, 0.913);
+        transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+    }
+ 
+    .boton-menu:focus-visible {
+        outline: 2px solid #42b7b0;
+        outline-offset: 2px;
+    }
+ 
+    /* cuando el menu esta abierto: las 3 rayas se transforman en una X */
+    .boton-menu.abierto {
+        border-color: #42b7b0;
+        background-color: rgba(66, 183, 176, 0.12);
+    }
+ 
+    .boton-menu.abierto span {
+        background-color: #42b7b0;
+    }
+ 
+    .boton-menu.abierto span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+ 
+    .boton-menu.abierto span:nth-child(2) {
+        opacity: 0;
+    }
+ 
+    .boton-menu.abierto span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+ 
+    /* MENU DESPLEGABLE (la lista de links) */
+    nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+ 
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 0;
+ 
+        height: auto;
+        padding: 6px 24px 22px;
+ 
+        background: #0a2b40;
+        border-bottom: 2px solid #42b7b0;
+        box-shadow: 0 14px 25px rgba(0, 0, 0, 0.45);
+ 
+        /* cerrado por defecto */
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
+    }
+ 
+    /* abierto (la clase la agrega menu.js) */
+    nav ul.abierto {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s;
+    }
+ 
+    nav ul li {
+        text-align: center;
+        border-bottom: 1px solid rgba(159, 207, 212, 0.15);
+    }
+ 
+    nav ul li:last-child {
+        border-bottom: none;
+        padding-top: 18px;
+    }
+ 
+    nav ul li a {
+        display: block;
+        padding: 15px 0;
+        font-size: 1.2rem;
+    }
+ 
+    /* link de la pagina actual */
+    nav ul li a.activo {
+        display: inline-block;
+        padding: 15px 4px 8px;
+    }
+ 
+    /* boton Donar dentro del menu */
+    nav ul li a.btn-donar {
+        display: block;
+        padding: 13px 20px;
+    }
+ 
+    nav ul li a.btn-donar:hover {
+        transform: none;
+    }
+ 
+ 
+    /* ---------- PAGINA PRINCIPAL (HERO) ---------- */
+ 
+    .hero {
+        height: 100vh;
+        height: 100svh;
+        padding: 0 7%;
+        /* degrade parejo de arriba hacia abajo para que el texto se lea sobre la foto */
+        background-image: linear-gradient(
+            to bottom,
+            rgba(10, 25, 47, 0.8) 0%,
+            rgba(10, 25, 47, 0.55) 55%,
+            rgba(10, 25, 47, 0.8) 100%
+        ), url('img/Fondo.jpg');
+        background-position: center;
+    }
+ 
+    .tarjeta {
+        margin-bottom: 0;
+        padding-top: 40px;
+    }
+ 
+    .titulo {
+        font-size: clamp(2.1rem, 11vw, 3.2rem);
+        margin-bottom: 16px;
+    }
+ 
+    .intro {
+        font-size: 1.25rem;
+        line-height: 1.4;
+        margin-bottom: 28px;
+    }
+ 
+    .intro br,
+    .resumen br,
+    .caja-indice br,
+    .trj-cuerpo br,
+    #final br {
+        display: none;          /* los saltos de linea fijos se acomodan solos */
+    }
+ 
+    .btn-conocenos {
+        font-size: 1.2rem;
+        padding: 12px 26px;
+    }
+ 
+ 
+    /* ---------- SECCION CONOCENOS ---------- */
+ 
+    #conocenos {
+        flex-direction: column;
+        height: auto;
+        margin-top: 0;
+        box-shadow: none;
+    }
+ 
+    #texto-conocenos {
+        width: 100%;
+        padding: 56px 22px 40px;
+    }
+ 
+    #aside-conocenos {
+        display: none;          /* se saca la imagen del pinguino en celular */
+    }
+ 
+    .nuestra {
+        font-size: 0.95rem;
+        margin: 0;
+    }
+ 
+    .separador {
+        overflow: hidden;       /* recorta la linea de guiones bajos al ancho de la pantalla */
+        white-space: nowrap;
+    }
+ 
+    .t-res,
+    .t-pilares {
+        font-size: clamp(2rem, 10vw, 2.6rem);
+        margin-left: 0;
+    }
+ 
+    .resumen {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        margin-left: 0;
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+ 
+    .caja-indice {
+        margin: 18px 0 0 0 !important;   /* pisa los margenes que estan escritos en el HTML */
+        max-width: 100%;
+        padding: 14px 16px;
+    }
+ 
+    .caja-indice:hover {
+        transform: none;        /* en celular no hay "hover", evita que se agrande y desborde */
+    }
+ 
+    .caja-indice h3 {
+        font-size: 1.2rem;
+    }
+ 
+    .caja-indice p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+ 
+    #btn-back {
+        margin: 24px 0 0 0 !important;
+        transform: none !important;
+        min-height: 0 !important;
+        height: 40px;
+        align-self: flex-start;
+    }
+ 
+ 
+    /* ---------- SECCION QUE HACEMOS ---------- */
+ 
+    #que-hacemos {
+        height: auto;
+        gap: 28px;
+        padding: 56px 22px 48px;
+    }
+ 
+    .pilares {
+        font-size: 0.95rem;
+        margin: 0;
+    }
+ 
+    /* las tarjetas pasan a ir una debajo de la otra, a todo el ancho */
+    .contenedor-trj {
+        max-width: 100%;
+        margin: 0 !important;            /* pisa los margin-left del HTML */
+        transform: none !important;      /* pisa los translateY del HTML */
+        min-height: 0 !important;
+        gap: 16px;
+        padding: 14px;
+    }
+ 
+    .trj-img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;               /* las 3 fotos quedan del mismo tamano sin deformarse */
+    }
+ 
+    .categoria {
+        font-size: 1.25rem;
+    }
+ 
+    .trj-cuerpo p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+ 
+    #que-hacemos #btn-back {
+        align-self: center;
+        margin-top: 4px !important;
+    }
+ 
+ 
+    /* ---------- PIE DE PAGINA ---------- */
+ 
+    #footer {
+        height: auto;
+        padding: 56px 22px 28px;
+    }
+ 
+    #footer-contenido {
+        padding-bottom: 0;
+    }
+ 
+    #final {
+        font-size: 1.7rem;
+        line-height: 1.35;
+        padding-top: 0;
+    }
+ 
+    .sumate {
+        margin-top: 32px;
+        font-size: 1.2rem;
+        padding: 10px 28px;
+    }
+ 
+    .derechos {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        padding-top: 56px;
+    }
+ 
+ 
+    /* ---------- PAGINA CONTACTO ---------- */
+ 
+    #contacto {
+        padding: 100px 16px 40px;
+    }
+ 
+    .contacto-encabezado h3 {
+        font-size: 0.95rem;
+        letter-spacing: 1.5px;
+    }
+ 
+    .contacto-encabezado h1 {
+        font-size: 2.8rem;
+    }
+ 
+    .contacto-tarjeta {
+        padding: 20px;
+    }
+ 
+ 
+    /* ---------- VENTANA DE DONACION ---------- */
+ 
+    .modal-donacion {
+        padding: 14px;
+    }
+ 
+    .contenido-donacion {
+        max-height: 100%;
+        overflow-y: auto;       /* si la pantalla es chica, se puede scrollear adentro */
+    }
+ 
+    .cerrar-donacion {
+        top: 6px;
+        right: 10px;
+        width: 44px;
+        height: 44px;
+    }
+ 
+    #otro-monto {
+        font-size: 16px;        /* evita el zoom automatico de iPhone al escribir */
+    }
+ 
+}

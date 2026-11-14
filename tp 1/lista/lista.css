@@ -1,0 +1,41 @@
+.listagato { 
+   list-style-image: url(/Imagenes/pata\ lista.png);
+   list-style-position: inside;
+   text-align: center;
+   padding-left: 0;
+   margin-left: 0;
+}
+
+.gatolist {
+    font-size: 30px;
+    margin-bottom: 10px;
+    border-bottom: 10px solid pink;
+    width: 100%;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    background-image: url(../Playlist/img/giff.gif);
+}
+
+section {
+    border: 15px solid pink;
+}
+
+h1{
+    background-color: #F6CDDC;
+}
+h6 {
+    font-weight: 500;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.difult {
+    font-size: 30px;
+    margin-bottom: 10px;
+}

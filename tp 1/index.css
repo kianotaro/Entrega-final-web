@@ -1,0 +1,36 @@
+.nombre {
+    background-color: #F6D9DC; 
+    width: fit-content; 
+    margin: 20px auto; 
+    padding: 10px 20px; 
+    border-radius: 10px;
+}
+
+.Espacio {
+    padding-top: 10px;
+    font-weight: 500;
+
+}
+.Espacio2 {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-weight: 500;
+    background-color: #F6D9DC; 
+    width: fit-content; 
+    margin: 20px auto; 
+    padding: 10px 20px; 
+    border-radius: 20px;
+}
+.ImagenC {
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border: solid 7px #F6D9DC;
+}
+
+.Espgif {
+    padding-top: 20px;
+}
+
+h3 {
+    font-weight: 500;
+}
